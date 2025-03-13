@@ -1,5 +1,6 @@
 import React from "react";
 import { FaPhone, FaEnvelope } from "react-icons/fa";
+import OwnerPhoto from "../assets/images/Owner.jpg"
 
 const OwnerInfo: React.FC = () => {
     return (
@@ -11,7 +12,7 @@ const OwnerInfo: React.FC = () => {
         ">
             {/* Zdjęcie właściciela */}
             <img
-                src="../assets/images/Owner.jpg"
+                src={OwnerPhoto}
                 alt="Właściciel"
                 className="w-36 h-36 rounded-full object-cover mb-4"
             />

@@ -1,5 +1,5 @@
 import React from "react";
-
+import OwnerPhoto from "../assets/images/Owner.jpg";
 const achievements = [
     { title: "Właściciel firmy", company: "Biuro Inżynierskie mgr inż. Jacek Gil - Dębica", years: "01/2025 - obecnie" },
     { title: "Prezes Zarządu", company: "Wodociągi Dębickie sp. z o.o.", years: "02/2007 - 07/2024" },
@@ -19,7 +19,7 @@ const AboutMe: React.FC = () => {
 
                 {/* Zdjęcie właściciela */}
                 <img
-                    src="../assets/images/Owner.jpg"
+                    src={OwnerPhoto}
                     alt="Jacek Gil"
                     className="w-48 h-48 rounded-full object-cover shadow-lg mb-6"
                 />

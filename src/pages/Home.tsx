@@ -3,6 +3,7 @@ import { Link } from "react-router-dom";
 import { FaLinkedin } from "react-icons/fa";
 import OwnerInfo from "../components/OwnerInfo";
 
+
 const Home: React.FC = () => {
     return (
         <div className="bg-white text-gray-900 min-h-screen">
