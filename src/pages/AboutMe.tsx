@@ -19,7 +19,7 @@ const AboutMe: React.FC = () => {
 
                 {/* Zdjęcie właściciela */}
                 <img
-                    src="src/assets/images/owner.jpg"
+                    src="../assets/images/Owner.jpg"
                     alt="Jacek Gil"
                     className="w-48 h-48 rounded-full object-cover shadow-lg mb-6"
                 />

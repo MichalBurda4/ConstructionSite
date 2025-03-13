@@ -11,7 +11,7 @@ const OwnerInfo: React.FC = () => {
         ">
             {/* Zdjęcie właściciela */}
             <img
-                src="src/assets/images/owner.jpg"
+                src="../assets/images/Owner.jpg"
                 alt="Właściciel"
                 className="w-36 h-36 rounded-full object-cover mb-4"
             />
