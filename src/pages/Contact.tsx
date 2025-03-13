@@ -74,7 +74,7 @@ const Contact: React.FC = () => {
                 {/* Ikony social media w okręgach */}
                 <div className="flex justify-center mt-6 space-x-6">
                     <a
-                        href="https://www.linkedin.com/in/jacekgil"
+                        href="https://www.linkedin.com/in/jacek-gil-223050144/"
                         target="_blank"
                         rel="noopener noreferrer"
                         className="w-16 h-16 flex items-center justify-center border-2 border-gray-400 rounded-full hover:bg-gray-100 transition"

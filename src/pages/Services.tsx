@@ -29,7 +29,7 @@ const services = [
         image: img4
     },
     {
-        title: "Prowadzenie ksiąg obiektów budowlanych",
+        title: "Prowadzenie książek obiektów budowlanych",
         description: "Dokumentacja budowlana zarówno w formie tradycyjnej, jak i cyfrowej (c-KOB).",
         image: img5
     },

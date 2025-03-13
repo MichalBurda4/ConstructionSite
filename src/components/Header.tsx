@@ -1,6 +1,6 @@
 import React from "react";
 import { Link, useLocation } from "react-router-dom";
-import { FaHome, FaTools, FaPhoneAlt, FaUser } from 'react-icons/fa';
+import { FaHome, FaClipboardList, FaPhoneAlt, FaUser } from 'react-icons/fa';
 import "./Header.css";
 
 const Header: React.FC = () => {
@@ -20,7 +20,7 @@ const Header: React.FC = () => {
                         </li>
                         <li className={location.pathname === "/services" ? "active" : ""}>
                             <Link to="/services">
-                                <FaTools size={18} className="icon"/>
+                                <FaClipboardList size={18} className="icon"/>
                                 <span>Zakres działalności</span>
                             </Link>
                         </li>

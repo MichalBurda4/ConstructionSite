@@ -42,7 +42,7 @@ const Home: React.FC = () => {
 
                     {/* Przyciski do podstron */}
                     <div className="flex gap-4 mb-12">
-                        <Link to="/services" className="bg-blue-600 text-white px-6 py-2 rounded-lg shadow-md hover:bg-blue-700 transition">
+                        <Link to="/services" className="bg-gray-800 text-white px-6 py-2 rounded-lg shadow-md hover:bg-blue-700 transition">
                             Zobacz nasze usługi
                         </Link>
                         <Link to="/AboutMe" className="bg-gray-800 text-white px-6 py-2 rounded-lg shadow-md hover:bg-gray-900 transition">
@@ -59,7 +59,7 @@ const Home: React.FC = () => {
                 {/* Ikona LinkedIn */}
                 <div className="flex justify-center mt-6">
                     <a
-                        href="https://www.linkedin.com/in/jacekgil"
+                        href="https://www.linkedin.com/in/jacek-gil-223050144/"
                         target="_blank"
                         rel="noopener noreferrer"
                         className="w-16 h-16 flex items-center justify-center border-2 border-gray-400 rounded-full hover:bg-gray-100 transition"
