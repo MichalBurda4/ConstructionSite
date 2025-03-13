@@ -24,10 +24,10 @@ const OwnerInfo: React.FC = () => {
             {/* Kontakt */}
             <div className="text-gray-700 text-sm space-y-1">
                 <p className="flex items-center justify-center">
-                    <FaPhone className="mr-2 text-red-500" /> +48 664 761 968
+                    <FaPhone className="mr-2 text-grey-500" /> +48 664 761 968
                 </p>
                 <p className="flex items-center justify-center">
-                    <FaEnvelope className="mr-2 text-blue-500" /> jacekgil@autograf.pl
+                    <FaEnvelope className="mr-2 text-grey-500" /> jacekgil@autograf.pl
                 </p>
                 <p>39-200 Dębica, ul. Cisowa 4</p>
                 <p>NIP: 872-102-64-47</p>

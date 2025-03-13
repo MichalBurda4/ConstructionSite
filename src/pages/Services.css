@@ -48,6 +48,8 @@
 /* Tekst wewnątrz kart */
 .service-info {
     padding: 25px;
+    word-break: break-word;
+    white-space: normal;
 }
 
 .service-info h3 {

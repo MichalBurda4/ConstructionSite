@@ -7,6 +7,11 @@ import img5 from "../assets/images/services/img5.webp";
 import img6 from "../assets/images/services/img6.webp";
 import "./Services.css";
 
+// Funkcja zapobiegająca przenoszeniu krótkich słów na nową linię
+const preventOrphanWords = (text: string) => {
+    return text.replace(/\s(\S{1,3})\s/g, " $1&nbsp;");
+};
+
 const services = [
     {
         title: "Przygotowanie inwestycji",
@@ -42,7 +47,7 @@ const services = [
 
 const Services: React.FC = () => {
     return (
-        <div className="services-container"> {/* Dodajemy odstęp od headera */}
+        <div className="services-container">
             <h2>Zakres działalności</h2>
             <div className="services-list">
                 {services.map((service, index) => (
@@ -50,7 +55,7 @@ const Services: React.FC = () => {
                         <img src={service.image} alt={service.title} className="service-image" />
                         <div className="service-info">
                             <h3>{service.title}</h3>
-                            <p>{service.description}</p>
+                            <p dangerouslySetInnerHTML={{ __html: preventOrphanWords(service.description) }}></p>
                         </div>
                     </div>
                 ))}
