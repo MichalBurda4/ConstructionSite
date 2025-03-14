@@ -65,10 +65,6 @@ const Home: React.FC = () => {
                               className="bg-gray-800 text-white px-6 py-2 rounded-lg shadow-md hover:bg-gray-900 transition">
                             Więcej o właścicielu
                         </Link>
-                        <Link to="/Contact"
-                              className="bg-gray-800 text-white px-6 py-2 rounded-lg shadow-md hover:bg-gray-900 transition">
-                            Skontatkuj się ze mną
-                        </Link>
                     </div>
                 </div>
             </div>
