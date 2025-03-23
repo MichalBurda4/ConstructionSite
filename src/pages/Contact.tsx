@@ -1,71 +1,102 @@
-import React from "react";
+import React, { useState } from "react";
 import { FaMapMarkerAlt, FaPhoneAlt, FaEnvelope, FaIdBadge, FaLinkedin } from "react-icons/fa";
-import ownerPhoto from "../assets/images/OwnerContact.webp"; // Zdjęcie właściciela
+import ownerPhoto from "../assets/images/Owner.jpg"; // Zdjęcie właściciela
 
 const Contact: React.FC = () => {
+    const [email, setEmail] = useState("");
+    const [phone, setPhone] = useState("");
+    const [message, setMessage] = useState("");
+
+    const handleSubmit = (e: React.FormEvent) => {
+        e.preventDefault();
+        // tutaj można zaimplementować wysyłanie formularza do backendu lub na e-mail
+        alert("Wiadomość została wysłana");
+        // Reset form
+        setEmail("");
+        setPhone("");
+        setMessage("");
+    };
+
     return (
         <div className="bg-white text-gray-900 min-h-screen flex flex-col items-center py-12 px-6">
-            {/* Główna sekcja kontaktowa */}
-            <div className="max-w-6xl w-full flex flex-col lg:flex-row gap-12 items-center lg:items-start">
+            {/* Nagłówek */}
+            <h2 className="text-3xl font-bold mb-4 text-center">Skontaktuj się ze mną</h2>
 
-                {/* Zdjęcie właściciela po lewej stronie */}
-                <div className="flex justify-center">
-                    <img src={ownerPhoto} alt="Jacek Gil" className="w-152 h-auto rounded-lg object-cover shadow-lg" />
-                </div>
-
-                {/* Dane kontaktowe i mapa po prawej stronie */}
-                <div className="flex flex-col space-y-6 w-full lg:w-2/3">
-                    <h2 className="text-3xl font-bold mb-4">Skontaktuj się ze mną</h2>
-
-                    {/* Informacje kontaktowe */}
-                    <div className="text-lg space-y-4 bg-gray-100 p-6 rounded-lg shadow-md">
-                        <p className="font-semibold text-xl text-gray-800">Biuro Inżynierskie mgr inż. Jacek Gil</p>
-
-                        <p className="flex items-center text-gray-700">
-                            <FaMapMarkerAlt className="text-gray-500 mr-3" />
-                            39-200 Dębica, ul. Cisowa 4
-                        </p>
-
-                        <p className="flex items-center text-gray-700">
-                            <FaPhoneAlt className="text-gray-500 mr-3" />
-                            <a href="tel:+48664761968" className="text-blue-600 hover:underline">
-                                +48 664 761 968
-                            </a>
-                        </p>
-
-                        <p className="flex items-center text-gray-700">
-                            <FaEnvelope className="text-gray-500 mr-3" />
-                            <a href="mailto:jacekgil@autograf.pl" className="text-blue-600 hover:underline">
-                                jacekgil@autograf.pl
-                            </a>
-                        </p>
-
-                        <p className="flex items-center text-gray-700">
-                            <FaIdBadge className="text-gray-500 mr-3" />
-                            NIP: 872-102-64-47
-                        </p>
-
-                        <p className="flex items-center text-gray-700">
-                            <FaIdBadge className="text-gray-500 mr-3" />
-                            REGON: 850069539
-                        </p>
-                    </div>
-
-                    {/* Mapa Google */}
-                    <div className="w-full">
-                        <iframe
-                            title="Lokalizacja Biura"
-                            width="100%"
-                            height="350"
-                            frameBorder="0"
-                            className="rounded-lg shadow-md"
-                            style={{ border: 0 }}
-                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2561.0525256452473!2d21.39862087612433!3d50.0426467715125!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x473cfbdc75a1d0b5%3A0x4e13bfcf7cce258e!2sCisowa%204%2C%2039-200%20D%C4%99bica!5e0!3m2!1spl!2spl!4v1710000000000"
-                            allowFullScreen>
-                        </iframe>
-                    </div>
-                </div>
+            {/* Zdjęcie właściciela */}
+            <div className="flex justify-center mb-6">
+                <img src={ownerPhoto} alt="Jacek Gil" className="w-48 h-48 rounded-full object-cover shadow-lg" />
             </div>
+
+            {/* Dane kontaktowe */}
+            <div className="text-lg space-y-4 bg-gray-100 p-6 rounded-lg shadow-md w-full max-w-2xl mb-8">
+                <p className="font-semibold text-xl text-gray-800">Biuro Inżynierskie mgr inż. Jacek Gil</p>
+                <p className="flex items-center text-gray-700">
+                    <FaMapMarkerAlt className="text-gray-500 mr-3" />
+                    39-200 Dębica, ul. Cisowa 4
+                </p>
+
+                <p className="flex items-center text-gray-700">
+                    <FaPhoneAlt className="text-gray-500 mr-3" />
+                    <a href="tel:+48664761968" className="text-blue-600 hover:underline">
+                        +48 664 761 968
+                    </a>
+                </p>
+
+                <p className="flex items-center text-gray-700">
+                    <FaEnvelope className="text-gray-500 mr-3" />
+                    <a href="mailto:jacekgil@autograf.pl" className="text-blue-600 hover:underline">
+                        jacekgil@autograf.pl
+                    </a>
+                </p>
+
+                <p className="flex items-center text-gray-700">
+                    <FaIdBadge className="text-gray-500 mr-3" />
+                    NIP: 872-102-64-47
+                </p>
+
+                <p className="flex items-center text-gray-700">
+                    <FaIdBadge className="text-gray-500 mr-3" />
+                    REGON: 850069539
+                </p>
+            </div>
+
+            {/* Formularz kontaktowy */}
+            <form onSubmit={handleSubmit} className="w-full max-w-2xl mb-12 space-y-6 bg-gray-100 p-6 rounded-lg shadow-md">
+                <h3 className="text-2xl font-semibold mb-4 text-center">Formularz kontaktowy</h3>
+
+                <div className="flex flex-col space-y-4">
+                    <input
+                        type="email"
+                        placeholder="Twój e-mail"
+                        className="p-3 border rounded-lg w-full"
+                        value={email}
+                        onChange={(e) => setEmail(e.target.value)}
+                        required
+                    />
+                    <input
+                        type="tel"
+                        placeholder="Twój numer telefonu"
+                        className="p-3 border rounded-lg w-full"
+                        value={phone}
+                        onChange={(e) => setPhone(e.target.value)}
+                        required
+                    />
+                    <textarea
+                        placeholder="Treść wiadomości"
+                        className="p-3 border rounded-lg w-full h-32"
+                        value={message}
+                        onChange={(e) => setMessage(e.target.value)}
+                        required
+                    />
+                </div>
+
+                <button
+                    type="submit"
+                    className="w-full bg-blue-600 text-white p-3 rounded-lg hover:bg-blue-700 transition"
+                >
+                    Wyślij wiadomość
+                </button>
+            </form>
 
             {/* Sekcja LinkedIn na dole */}
             <div className="mt-16 text-center">

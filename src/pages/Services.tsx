@@ -24,7 +24,7 @@ const services = [
         image: img2
     },
     {
-        title: "Nadzór budowlany",
+        title: "Nadzór inwestorski",
         description: "Kontrola zgodności realizacji inwestycji z obowiązującymi przepisami.",
         image: img3
     },

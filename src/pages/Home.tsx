@@ -7,9 +7,9 @@ import { FaLinkedin, FaBuilding, FaSearch, FaClipboardList, FaComments } from "r
 
 // Dane do sekcji "Nasze Usługi"
 const services = [
-    { title: "Nadzór budowlany", icon: <FaBuilding className="text-grey-500 text-3xl" /> },
-    { title: "Kontrola techniczna", icon: <FaSearch className="text-grey-500 text-3xl" /> },
-    { title: "Dokumentacja budowlana", icon: <FaClipboardList className="text-grey-500 text-3xl" /> },
+    { title: "Nadzór inwestorski", icon: <FaBuilding className="text-grey-500 text-3xl" /> },
+    { title: "Kontrole techniczne", icon: <FaSearch className="text-grey-500 text-3xl" /> },
+    { title: "Dokumentacja obiektów", icon: <FaClipboardList className="text-grey-500 text-3xl" /> },
     { title: "Doradztwo techniczne", icon: <FaComments className="text-grey-500 text-3xl" /> }
 ];
 
