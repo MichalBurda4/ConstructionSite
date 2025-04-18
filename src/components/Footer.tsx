@@ -5,7 +5,7 @@ import "./Footer.css";
 const Footer: React.FC = () => {
     return (
         <footer className="footer">
-            <p>&copy; {new Date().getFullYear()} Nadzór Budowlany. Wszelkie prawa zastrzeżone.</p>
+            <p>&copy; {new Date().getFullYear()} Biuro Inżynierskie. Wszelkie prawa zastrzeżone.</p>
             <nav>
                 <ul className="footer-links">
                     <li><Link to="/">Home</Link></li>
