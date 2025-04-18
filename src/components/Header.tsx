@@ -9,7 +9,7 @@ const Header: React.FC = () => {
     return (
         <header className="header">
             <div className="header-content container mx-auto">
-                <div className="logo">Jacek Gil <br /> Nadzór Budowlany</div>
+                <div className="logo">Jacek Gil <br /> Biuro Inżynierskie</div>
                 <nav>
                     <ul className="nav-links">
                         <li className={location.pathname === "/" ? "active" : ""}>

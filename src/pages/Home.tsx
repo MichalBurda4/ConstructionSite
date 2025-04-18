@@ -29,7 +29,7 @@ const Home: React.FC = () => {
                 <div className="lg:w-2/3">
                     {/* Nagłówek */}
                     <h2 className="text-3xl font-bold mb-6 text-center lg:text-left">
-                        Witamy na stronie Nadzoru Budowlanego
+                        Witamy na stronie Biura Inżynierskiego Jacka Gila
                     </h2>
 
                     {/* Skrócony opis działalności */}
